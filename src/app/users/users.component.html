@@ -1,0 +1,110 @@
+<section id="container">
+
+    <div>
+        <!--header start-->
+        <header class="header black-bg">
+            <div class="sidebar-toggle-box">
+                <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+            </div>
+            <!--logo start-->
+            <a href="" class="logo">
+                <b>i<span>Waivers</span>
+                </b>
+            </a>
+            <!--logo end-->
+
+            <div class="top-menu">
+                <ul class="nav pull-right top-menu">
+                    <li>
+                        <a class="logout" [routerLink]="['/login']" routerlinkactive="router-link-active">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!--header end-->
+
+    </div>
+
+    <!--sidebar start-->
+    <aside>
+        <div id="sidebar" class="nav-collapse ">
+            <!-- sidebar menu start-->
+            <ul class="sidebar-menu" id="nav-accordion">
+                <p class="centered">
+                    <!-- <a href="profile.html"><img src="./assets/Dashio/img/ui-sam.jpg" class="img-circle" width="80"></a> -->
+                </p>
+                <h5 class="centered">Total Users</h5>
+                <li class="mt">
+                    <a [routerLink]="['/login']" routerlinkactive="router-link-active">
+                        <i class="fa fa-dashboard"></i>
+                        <span>User Data</span>
+                    </a>
+                </li>
+
+                <li class="mt">
+                    <a [routerLink]="['/users']" routerlinkactive="router-link-active">
+                        <i class="fa fa-dashboard"></i>
+                        <span>Contact Info</span>
+                    </a>
+                </li>
+                <li class="mt">
+                    <a href="index.html">
+                        <i class="fa fa-dashboard"></i>
+                        <span>Allowed Waivers</span>
+                    </a>
+                </li>
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="fa fa-desktop"></i>
+                        <span>Payments</span>
+                    </a>
+
+                </li>
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="fa fa-cogs"></i>
+                        <span>Waivers Consumed</span>
+                    </a>
+
+                </li>
+                <li class="sub-menu">
+                    <a class="active" href="javascript:;">
+                        <i class="fa fa-book"></i>
+                        <span>BroadCast</span>
+                    </a>
+
+                </li>
+
+
+
+
+
+
+            </ul>
+            <!-- sidebar menu end-->
+        </div>
+    </aside>
+    <!--sidebar end-->
+
+    <section id="main-content">
+        <section class="wrapper site-min-height">
+
+            <div class="row mt">
+                <div class="col-lg-12">
+
+                    <div>
+                        <button class="btn btn-complete btn-cons" (click)="editDeviceSettings()">
+                            Total Users</button><br>
+                        <button class="btn btn-danger btn-cons" (click)="cencelUpdats()">Cancel</button>
+                        <br>
+                        <button type="button" class="btn btn-round btn-primary">Primary</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /wrapper -->
+    </section>
+
+
+
+</section>
